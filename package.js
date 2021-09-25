@@ -15,6 +15,17 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true}));
+const db = require("./app/models");
+
+db.mongoose.connect(config.db.url)
+    .then(() => {
+        console.log("connected to the database!");
+    })
+    .catch((error) =>{
+        console.log("Cannot connect to the database!", error);
+        process.exit();
+    })
+
 
 setupContactRoutes(app);
 
