@@ -9,8 +9,14 @@
   "author": "DuongDuyChuong",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "axios": "^0.23.0",
+    "bootstrap": "^4.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^6.0.6"
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.6",
+    "popper.js": "^1.16.1",
+    "vue-router": "^4.0.12"
   }
 }
